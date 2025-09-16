@@ -1,11 +1,6 @@
 // t.js
 window.addEventListener("load", () => {
   navigator.serviceWorker.register("../sw.js?v=2025-04-15", { scope: "/a/" });
-  setTimeout(() => {
-    if (typeof popout === "function") {
-      popout();
-    }
-  }, 1000);
   const form = document.getElementById("fv");
   const input = document.getElementById("iv");
   if (form && input) {
