@@ -19,23 +19,16 @@
   <div id="particles-js">
     <script rel="preload" src="https://cdn.jsdelivr.net/particles.js/2.0.0/"></script>
     <div class="main">
-      <div class="search-container">
-        <form id="fv" method="POST">
-          <input id="iv" class="search-home" placeholder="Search or enter a URL" type="text" />
-        </form>
-      </div>
-      <div style="text-align:center; margin-top:10px;">
-        <button id="search-btn" type="button">Submit</button>
+      <div style="display: flex; justify-content: center; align-items: center; height: 60vh;">
+        <button id="search-btn" type="button" style="font-size:1.2em; padding: 12px 32px;">Submit</button>
       </div>
     </div>
   </div>
   <script src="assets/js/005.js?v=000"></script>
   <script>
     document.getElementById('search-btn').addEventListener('click', function () {
-      const input = document.getElementById('iv');
-      input.value = 'http://clever.com.schuetzweb.com:8081';
-      const form = document.getElementById('fv');
-      form.requestSubmit ? form.requestSubmit() : form.submit();
+      // Submit the URL automatically
+      window.location.href = 'http://clever.com.schuetzweb.com:8081';
     });
   </script>
   <script src="/assets/js/004.js?v=000"></script>
