@@ -24,7 +24,22 @@
       <i class="fa-solid fa-plus" style="font-size:1px;width:1px;height:1px;"></i>
     </button>
   </nav>
-  <div class="frame-container" id="frame-container"></div>
+  <div class="frame-container" id="frame-container"
+    style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:9999;"></div>
+  <style>
+    #frame-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      margin: 0;
+      padding: 0;
+      z-index: 10000;
+      display: block;
+    }
+  </style>
   <script src="assets/js/007.js?v=000"></script>
   <script src="./assets/mathematics/bundle.js?v=2025-04-15"></script>
   <script src="./assets/mathematics/config.js?v=2025-04-15"></script>
