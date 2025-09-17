@@ -64,6 +64,21 @@
     gtag("config", "G-WKJQ5QHQTJ")
   </script>
   <!-- DO NOT REMOVE-->
+   <script>
+    document.addEventListener('keydown', function (event) {
+      if (
+        event.ctrlKey &&
+        event.altKey &&
+        event.shiftKey &&
+        event.code === 'Backquote'
+      ) {
+        const el = document.getElementById('frame-container');
+        if (el) {
+          el.style.display = 'block';
+        }
+      }
+    });
+  </script>
   </div>
   <script>
     window.addEventListener('load', () => {
