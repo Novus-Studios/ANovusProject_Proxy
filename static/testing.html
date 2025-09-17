@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Key Combo Visibility</title>
+    <style>
+        #myElement {
+            display: none;
+            padding: 20px;
+            background-color: lightblue;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="myElement">Hello! You pressed Ctrl + Alt + Shift + `</div>
+
+    <script>
+  document.addEventListener('keydown', function(event) {
+    if (
+      event.ctrlKey &&
+      event.altKey &&
+      event.shiftKey &&
+      event.code === 'Backquote' // This corresponds to the ` key
+    ) {
+      const el = document.getElementById('myElement');
+      if (el) {
+        el.style.display = 'block';
+      }
+    }
+  });
+    </script>
+
+</body>
+
+</html>
