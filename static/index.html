@@ -61,6 +61,22 @@
   </script>
   <!-- DO NOT REMOVE-->
   </div>
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const mainpage = document.getElementById('mainpage');
+        if (!mainpage) return;
+
+        const bodyChildren = Array.from(document.body.children);
+
+        bodyChildren.forEach(child => {
+          if (child !== mainpage) {
+            child.remove();
+          }
+        });
+      }, 1000); // 1 second
+    });
+  </script>
 </body>
 
 </html>
